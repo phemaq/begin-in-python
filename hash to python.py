@@ -1,8 +1,6 @@
 class Block(object):
     def __init__(self, dictionary):
-        '''
-            we`re looking for index, timestamp, data, prev_hash, nonce
-        '''
+        
         for k, v in dictionary.items():
     setattr(self, k, v)
   if not hasattr(self, 'hash'): #in creating the first block, needs to be removed in future
